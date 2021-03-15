@@ -1,0 +1,78 @@
+/*=================*/
+/* CSS Variables */
+/*=================*/
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Manrope');
+
+html{
+
+    font-family: Manrope;
+
+    /* Primary Colors */
+    --Full-Slider-Bar: hsl(174, 77%, 80%);
+    --Slider-Backround: hsl(174, 86%, 45%);
+    --Discount-Background: hsl(14, 92%, 95%);
+    --Discount-Text: hsl(15, 100%, 70%);
+    --CTA-Text: hsl(226, 100%, 87%);    
+
+    /* Secondary Colors */
+    --Pricing-Component-Background: hsl (0, 0%, 100%);
+    --Main-Background: hsl(230, 100%, 99%);
+    --Empty-Slider-Bar: hsl(224, 65%, 95%);
+    --Toggle-Background: hsl(223, 50%, 87%);
+    --Text: hsl(225, 20%, 60%);
+    --Text-and-CTA-Background: hsl(227, 35%, 25%);
+
+    /* Font Size */
+    --Intro-Paragraph-Font: 15px;
+
+    /* Font Weights */ 
+    --font-weight-sm: 400;
+    --font-weight-md: 600;
+    --font-weight-lg: 800;
+
+    /* 
+    Page sizes: 
+    - Mobile: 375px
+    - Desktop: 1440px
+    */
+}
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+/*=============*/
+/* Page Styles */
+/*=============*/
+
+.main{
+    display: flex;
+    justify-content: center;
+    height: 95%;
+    width: 100%;
+}
+.centered-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 630px;
+    background-color: antiquewhite;
+}
+.content-box{
+    height: 400px;
+    width: 600px;
+    background-color: aliceblue;
+}
+
+
+.attribution{
+    background-color: aqua;
+    height: 5%;
+}
