@@ -45,6 +45,10 @@ body{
     overflow: hidden;
 }
 
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
 
 /*=============*/
 /* Page Styles */
@@ -63,16 +67,24 @@ body{
     justify-content: center;
     height: 100%;
     width: 630px;
-    background-color: antiquewhite;
+}
+.centered-content > h1{
+    margin-bottom: 10px;
 }
 .content-box{
-    height: 400px;
-    width: 600px;
+    height: 310px;
+    width: 510px;
+    padding: 40px;
+    margin-top: 60px;
+    border-radius: 10px;
     background-color: aliceblue;
 }
 
 
+/* Atrtibutions: Frontend Mentor */
 .attribution{
-    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 5%;
 }
