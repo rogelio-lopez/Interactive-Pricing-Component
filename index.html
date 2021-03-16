@@ -18,34 +18,66 @@
 
     <div class="centered-content">
       
-      <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial. No credit card required.</p>
-    
+      <!-- Header -->
+      <div class="header">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
 
-      <div class="content-box">
+      <!-- Content Box -->
+      <div class="content">
 
-        <div class="box-top">
-          <p>100k Pageviews</p>
-          <div class="top-price">
-            <h1>$</h1>
-            <p>/month</p>
+        <!-- Top Half (/month, price bar, billing)-->
+        <div class="content-top">
+
+          <div class="top-header">
+            <p>100k Pageviews</p>
+
+            <div class="top-price">
+
+              <h1>
+                $<span id="price">16.00</span>
+              </h1>
+              <p> /month</p>
+
+            </div>
+          </div>
+
+          <div class="top-bar">
+
+          </div>
+
+          <div class="top-billing">
+            <small>Billing</small>
+            <small>Yearly Billing</small>
+              
+            <small id="discount">25% discount</small>
           </div>
         </div>
       
-        <div class="box-pricing">
-          Monthly Billing
-          Yearly Billing 25% discount
-        </div>
-      
-        <div class="box-bot">
+        <!-- Bottom half (garantees, start button)-->
+        <div class="content-bot">
           <div class="bot-left">
-            <small>Unlimited websites</small>
-            <small>100% data ownership</small>
-            <small>Email reports</small>
+            <small>
+              <img class="check" src="./images/icon-check.svg">
+              Unlimited websites
+            </small>
+            <small>
+              <img class="check" src="./images/icon-check.svg">
+              100% data ownership
+            </small>
+            <small>
+              <img class="check" src="./images/icon-check.svg">
+              Email reports
+            </small>
           </div>  
-          <div class="bot-right">
-            <button>Start my trial</button>
-          </div>
+
+          <a 
+            href="https://www.frontendmentor.io/profile/rogelio-lopez" 
+            target="_blank"
+            class="bot-btn">
+              <small>Start my trial</small>
+          </a>
         </div>
       </div>
 
@@ -53,6 +85,8 @@
 
   </div>
   
+
+  <!-- Attribution -->
   <div class="attribution">
     <small>
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

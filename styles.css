@@ -17,7 +17,7 @@ html{
     --CTA-Text: hsl(226, 100%, 87%);    
 
     /* Secondary Colors */
-    --Pricing-Component-Background: hsl (0, 0%, 100%);
+    --Pricing-Component-Background: hsl(0, 0%, 100%);
     --Main-Background: hsl(230, 100%, 99%);
     --Empty-Slider-Bar: hsl(224, 65%, 95%);
     --Toggle-Background: hsl(223, 50%, 87%);
@@ -43,10 +43,12 @@ body{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    background: rgb(241, 245, 255);
 }
 
-h1, h2, h3, h4, h5, h6, p{
+h1, h2, h3, h4, h5, h6, p, small{
     margin: 0;
+    font-weight: var(--font-weight-md);
 }
 
 
@@ -66,20 +68,62 @@ h1, h2, h3, h4, h5, h6, p{
     align-items: center;
     justify-content: center;
     height: 100%;
-    width: 630px;
+    width: 620px;
 }
-.centered-content > h1{
+.header{
+    margin-bottom: 80px;
+}
+.header > h1, p{
+    text-align: center;
     margin-bottom: 10px;
 }
-.content-box{
-    height: 310px;
-    width: 510px;
-    padding: 40px;
-    margin-top: 60px;
+.content{
+    height: 400px;
+    width: 600px;
     border-radius: 10px;
-    background-color: aliceblue;
+    background-color: var(--Pricing-Component-Background);
+}
+.content-top{
+    height: 65%;
+    width: 100%;
+    border-bottom: solid 1px rgb(236, 236, 236);
 }
 
+
+.content-bot{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.bot-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55%;
+    width: 180px;
+    margin-left: 10%;
+}
+.check{
+    margin-right: 10px;
+}
+.bot-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 180px;
+    margin-right: 10%;
+    text-decoration: none;
+    color: white;
+    background: var(--Text-and-CTA-Background);
+    border-radius: 30px;
+    cursor: pointer;
+}
+.bot-btn:active{
+    transform: scale(.95);
+}
 
 /* Atrtibutions: Frontend Mentor */
 .attribution{
