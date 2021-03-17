@@ -10,7 +10,7 @@ html{
     font-family: Manrope;
 
     /* Primary Colors */
-    --Full-Slider-Bar: hsl(174, 77%, 80%);
+    --Full-Slider-Bar: hsl(174, 76%, 80%);
     --Slider-Backround: hsl(174, 86%, 45%);
     --Discount-Background: hsl(14, 92%, 95%);
     --Discount-Text: hsl(15, 100%, 70%);
@@ -18,7 +18,7 @@ html{
 
     /* Secondary Colors */
     --Pricing-Component-Background: hsl(0, 0%, 100%);
-    --Main-Background: hsl(230, 100%, 99%);
+    --Main-Background: hsl(240, 43%, 99%);
     --Empty-Slider-Bar: hsl(224, 65%, 95%);
     --Toggle-Background: hsl(223, 50%, 87%);
     --Text: hsl(225, 20%, 60%);
@@ -43,7 +43,9 @@ body{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background: rgb(241, 245, 255);
+    background: url(./images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Main-Background);
 }
 
 h1, h2, h3, h4, h5, h6, p, small{
@@ -76,7 +78,12 @@ p, small{
     height: 100%;
     width: 620px;
 }
+.circles{
+    position: absolute;
+    top: 12px;
+}
 .header{
+    z-index: 100;
     margin-bottom: 80px;
 }
 .header > h1, p{
@@ -87,7 +94,8 @@ p, small{
     height: 400px;
     width: 600px;
     border-radius: 10px;
-    background-color: var(--Pricing-Component-Background);
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgb(238, 238, 238);
 }
 
 /* Top of box */
@@ -113,14 +121,13 @@ p, small{
     align-items: center;
     margin-right: 10%;
 }
-.top-price>h1{
+.top-price > h1{
     font-size: 2.4rem;
 }
 .top-price > p{
     margin: 0;
     margin-left: 5px;
 }
-
 .top-bar{
     height: 25%;
     width: 100%;
@@ -128,16 +135,34 @@ p, small{
     align-items: flex-end;
     justify-content: center;
 }
-.slider{
-    -webkit-appearance: none;
-    outline: none;
+.slider-bg{
     width: 80%;
     height: 10px;
-    border-radius: 10px;
     margin-bottom: 18px;
-    background-color: var(--Empty-Slider-Bar);
+    position: relative;
+    border-radius: 10px;
+    background-color: var(--Empty-Slider-Bar)
+}
+.slider-bg-color{
+    width: 50%;
+    height: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--Slider-Backround)
+}
+.slider{
+    position: absolute;
+    bottom: 0;
+    -webkit-appearance: none;
+    outline: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: transparent;
 }
 .slider::-webkit-slider-thumb {
+    cursor: pointer;
     -webkit-appearance: none;
     appearance: none;
     width: 40px;
@@ -149,14 +174,17 @@ p, small{
     background-position-x: center;
     background-position-y: center;
     background-color: var(--Slider-Backround);
+    z-index: 100;
 }
-
+.slider::-webkit-slider-thumb:active{
+    background-color: var(--Full-Slider-Bar);
+}
 .top-billing{
     height: 30%;
     width: 100%;
     display: flex;
     align-items: center;
-    margin-left: 38.5%;
+    margin-left: 39%;
 }
 .toggle{
     display: flex;

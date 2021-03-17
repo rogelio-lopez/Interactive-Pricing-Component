@@ -17,6 +17,9 @@
   <div class="main">
 
     <div class="centered-content">
+
+      <!-- Circle pattern decoration -->
+      <img class="circles" src="./images/pattern-circles.svg">
       
       <!-- Header -->
       <div class="header">
@@ -32,7 +35,6 @@
 
           <div class="top-header">
             <p>100k PAGEVIEWS</p>
-
             <div class="top-price">
               <h1>
                 $<span id="price">25.00</span>
@@ -42,27 +44,30 @@
           </div>
 
           <div class="top-bar">
-            <input 
-              class="slider"
-              type="range" 
-              min="1" 
-              max="50" 
-              value="25"
-            >
+            <div class="slider-bg">
+              <div class="slider-bg-color"></div>
+
+              <input 
+                class="slider"
+                type="range" 
+                min="1" 
+                max="50" 
+                value="25"
+              >
+            </div>
           </div>
 
           <div class="top-billing">
             <small>Billing</small>
-
             <div class="toggle">
               <span class="switch"></span>
             </div>
-
             <small>Yearly Billing</small>
             <small id="discount">25% discount</small>
           </div>
         </div>
       
+
         <!-- Bottom half (garantees, start button)-->
         <div class="content-bot">
           <div class="bot-left">
@@ -102,6 +107,7 @@
     </small>
   </div>
 
+  <!-- Script -->
   <script src="app.js"></script>
 </body>
 </html>
