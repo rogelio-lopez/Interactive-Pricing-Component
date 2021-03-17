@@ -1,4 +1,4 @@
-# Frontend Mentor - Interactive pricing component solution
+# Interactive pricing component
 
 This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8).  
 
@@ -10,8 +10,8 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](http://rogeliolopez.dev/Interactive-Pricing-Component/)
+- [Solution URL](https://your-solution-url.com)
+- [Live Site URL](http://rogeliolopez.dev/Interactive-Pricing-Component/)
 
 
 ### Built with
@@ -25,5 +25,5 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 ## Author
 
 - Github - [Rogelio Lopez](https://github.com/rogelio-lopez)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/rogelio-lopez)
-- Twitter - [@yourusername](https://twitter.com/_rojolopz)
+- Frontend Mentor - [@rogelio-lopez](https://www.frontendmentor.io/profile/rogelio-lopez)
+- Twitter - [@_rojolopz](https://twitter.com/_rojolopz)
