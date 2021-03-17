@@ -10,7 +10,7 @@ This is a solution to the [Interactive pricing component challenge on Frontend M
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/profile/rogelio-lopez/solutions)
 - [Live Site URL](http://rogeliolopez.dev/Interactive-Pricing-Component/)
 
 
