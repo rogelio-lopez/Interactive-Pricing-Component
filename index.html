@@ -31,26 +31,34 @@
         <div class="content-top">
 
           <div class="top-header">
-            <p>100k Pageviews</p>
+            <p>100k PAGEVIEWS</p>
 
             <div class="top-price">
-
               <h1>
-                $<span id="price">16.00</span>
+                $<span id="price">25.00</span>
               </h1>
-              <p> /month</p>
-
+              <p> / month</p>
             </div>
           </div>
 
           <div class="top-bar">
-
+            <input 
+              class="slider"
+              type="range" 
+              min="1" 
+              max="50" 
+              value="25"
+            >
           </div>
 
           <div class="top-billing">
             <small>Billing</small>
+
+            <div class="toggle">
+              <span class="switch"></span>
+            </div>
+
             <small>Yearly Billing</small>
-              
             <small id="discount">25% discount</small>
           </div>
         </div>
@@ -93,5 +101,7 @@
       Coded by <a href="https://github.com/rogelio-lopez" target="_blank">Rogelio Lopez</a>.
     </small>
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

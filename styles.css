@@ -50,6 +50,12 @@ h1, h2, h3, h4, h5, h6, p, small{
     margin: 0;
     font-weight: var(--font-weight-md);
 }
+h1{
+    color: var(--Text-and-CTA-Background);
+}
+p, small{
+    color: var(--Text);
+}
 
 
 /*=============*/
@@ -83,13 +89,108 @@ h1, h2, h3, h4, h5, h6, p, small{
     border-radius: 10px;
     background-color: var(--Pricing-Component-Background);
 }
+
+/* Top of box */
 .content-top{
     height: 65%;
     width: 100%;
     border-bottom: solid 1px rgb(236, 236, 236);
 }
+.top-header{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.top-header > p{
+    margin-left: 10%;
+}
+.top-price{
+    height: fit-content;
+    width: fit;
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+.top-price>h1{
+    font-size: 2.4rem;
+}
+.top-price > p{
+    margin: 0;
+    margin-left: 5px;
+}
 
+.top-bar{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.slider{
+    -webkit-appearance: none;
+    outline: none;
+    width: 80%;
+    height: 10px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    background-color: var(--Empty-Slider-Bar);
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-radius: 50%;
+    background: url('./images/icon-slider.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: var(--Slider-Backround);
+}
 
+.top-billing{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 38.5%;
+}
+.toggle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    padding: 0px 3px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    background: var(--Slider-Backround);
+}
+.toggle-inactive{
+    display: flex;
+    justify-content: flex-end;
+    background: var(--Toggle-Background);
+}
+.switch{
+    height: 14px;
+    width: 14px;
+    border-radius: 99%;
+    background-color: white;
+}
+#discount{
+    font-size: .65rem;
+    margin-left: 12px;
+    padding: 3px 6px;
+    border-radius: 20px;
+    color: var(--Discount-Text);
+    background: var(--Discount-Background);
+}
+
+/* Bottom of box */
 .content-bot{
     height: 35%;
     width: 100%;
@@ -116,16 +217,18 @@ h1, h2, h3, h4, h5, h6, p, small{
     width: 180px;
     margin-right: 10%;
     text-decoration: none;
-    color: white;
     background: var(--Text-and-CTA-Background);
     border-radius: 30px;
     cursor: pointer;
+}
+.bot-btn > small{
+    color: white;
 }
 .bot-btn:active{
     transform: scale(.95);
 }
 
-/* Atrtibutions: Frontend Mentor */
+/* Atrtibutions (footer): Frontend Mentor */
 .attribution{
     display: flex;
     align-items: center;
